@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+  {% include head.html %}
+
+  <body>
+
+    {% include header.html %}
+
+    <div class="page-content">
+      <div class="wrapper">
+        {{ content }}
+      </div>
+    </div>
+
+    {% include footer.html %}
+
+    <script src="https://code.jquery.com/jquery-2.2.3.min.js" integrity="sha256-a23g1Nt4dtEYOj7bR+vTu7+T8VP13humZFBJNIYoEJo=" crossorigin="anonymous"></script>
+
+    <script>
+        $('.view-more-jobs').on('click', function(e) {
+            e.preventDefault();
+
+            $('.more-jobs').slideToggle();
+
+            var viewMoreText = $(this).text();
+
+            $(this).text(function(i, text){
+                return text === 'View more [+]' ? 'View less [-]' : 'View more [+]';
+            });
+        });
+    </script>
+
+  </body>
+
+</html>

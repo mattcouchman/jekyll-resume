@@ -1,0 +1,31 @@
+dt, dd {
+    display: inline-block;
+    vertical-align: top;
+    margin-bottom: 60px;
+
+    &:last-of-type {
+        margin-bottom: 0;
+    }
+}
+
+dt {
+    width: 30%;
+}
+dd {
+    width: 70%;
+}
+
+.title {
+    margin: 0;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.more-jobs {
+    display: none;
+}
+
+.view-more {
+    text-align: center;
+    margin-bottom: $spacing-unit;
+}

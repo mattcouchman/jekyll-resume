@@ -1,0 +1,26 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto+Mono:400,500,700);
+
+header {
+    padding: 200px 20px 60px;
+    margin-bottom: 60px;
+    border-bottom: 1px solid #edefee;
+}
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.intro {
+    &__pre, &__post {
+        text-transform: uppercase;
+        letter-spacing: 4px;
+    }
+
+    &__main {
+        font-size: 2.2rem;
+        line-height: 1.2;
+        font-weight: bold;
+        max-width: 60%;
+    }
+}

@@ -1,18 +1,33 @@
+dl {
+    margin-bottom: $spacer;
+}
+
 dt, dd {
     display: inline-block;
     vertical-align: top;
-    margin-bottom: 60px;
+    margin-bottom: $spacer;
+}
 
-    &:last-of-type {
-        margin-bottom: 0;
+@media(min-width: 640px) {
+    dt, dd {
+        margin-bottom: 60px;
     }
-}
 
-dt {
-    width: 30%;
-}
-dd {
-    width: 70%;
+    .experience {
+        dt {
+            width: 30%;
+            padding-right: ($spacer * 2);
+        }
+        dd {
+            width: 70%;
+        }
+    }
+
+    .education {
+        dt, dd {
+            width: 50%;
+        }
+    }
 }
 
 .title {
@@ -25,7 +40,13 @@ dd {
     display: none;
 }
 
-.view-more {
-    text-align: center;
-    margin-bottom: $spacing-unit;
+a {
+    color: black!important;
+    background: rgba(245, 215, 110, .5);
+    transition: all linear .2s;
+
+    &:hover {
+        background: rgba(245, 215, 110, 1);
+        text-decoration: none;
+    }
 }

@@ -1,62 +1,27 @@
-<dl class="recent-jobs">
-    <dt>
-        <p class="title">Engineering Lead</p>
-        <p class="company"><a href="">383 Project</a></p>
-        <p class="period">Mar 2016-Present</p>
-    </dt><!--
-    --><dd>
-        <p>Lead front end engineer working on a wide range of projects.</p>
-        <p>383 Project: <a href="">383project.com</a></p>
-    </dd>
-    <dt>
-        <p class="title">Front end developer</p>
-        <p class="company"><a href="">npower</a></p>
-        <p class="period">Sep 2014-Mar 2016</p>
-    </dt><!--
-    --><dd>
-        <p>Front end lead on an AngularJS (1.x) project to bring an online account management area to npower's SME customers.</p>
-        <p>Npower: <a href="">npower.com/business</a></p>
-    </dd>
-    <dt>
-        <p class="title">Front end developer</p>
-        <p class="company"><a href="">Sixth Story</a></p>
-        <p class="period">Aug 2013-Sep 2014</p>
-    </dt><!--
-    --><dd>
-        <p>Development lead on several websites for small to medium sized businesses.</p>
-        <p>Unipart Transport &amp; Logistics: <a href="">utl.com</a></p>
-        <p>Your Vets: <a href="">yourvets.com</a></p>
-    </dd>
+<h3 class="section-title">Experience</h3>
+<dl class="experience">
+    {% for job in site.data.jobs %}
+        <dt>
+            <p class="title">{{ job.title }}</p>
+            <p class="company">{{ job.company }}</p>
+            <p class="period">{{ job.period }}</p>
+        </dt><!--
+        --><dd>
+            <p>{{ job.description }}</p>
+        </dd>
+    {% endfor %}
 </dl>
 
-<p class="view-more"><a href="" class="view-more-jobs">View more [+]</a></p>
-
-<dl class="more-jobs">
-    <dt>
-        <p class="title">Contract front end developer</p>
-        <p class="company"><a href="">Cellarmasters</a></p>
-        <p class="period">Jan 2013-Apr 2013</p>
-    </dt><!--
-    --><dd>
-        <p>Contract position to build the UI for Myer Wine's mobile website.</p>
-        <p>Myer Wine: <a href="">myerwine.com.au</a></p>
-    </dd>
-    <dt>
-        <p class="title">Contract front end developer</p>
-        <p class="company"><a href="">Quofore</a></p>
-        <p class="period">Jul 2012-Dec 2012</p>
-    </dt><!--
-    --><dd>
-        <p>Some description about my role at this company, it should be at least a couple of paragraphs long and include a link to some of the work completed.</p>
-        <p>An example of some work can be found at: <a href="">thislink.com</a></p>
-    </dd>
-    <dt>
-        <p class="title">Junior front end developer</p>
-        <p class="company"><a href="">Kalexiko</a></p>
-        <p class="period">Oct 2010-Feb 2012</p>
-    </dt><!--
-    --><dd>
-        <p>Some description about my role at this company, it should be at least a couple of paragraphs long and include a link to some of the work completed.</p>
-        <p>An example of some work can be found at: <a href="">thislink.com</a></p>
-    </dd>
+<h3 class="section-title">Education</h3>
+<dl class="education">
+    {% for qualification in site.data.education %}
+        <dt>
+            <p class="title">{{ qualification.qualification }}</p>
+            <p class="company">{{ qualification.school }}</p>
+            <p class="period">{{ qualification.period }}</p>
+        </dt><!--
+        --><dd>
+            <p>{{ qualification.description }}</p>
+        </dd>
+    {% endfor %}
 </dl>

@@ -1,0 +1,30 @@
+// @name Layout
+// @description All layout settings and styles
+
+// Default spacing unit
+$spacer: 20px;
+
+.container {
+    max-width: 860px;
+    margin: 0 auto;
+    padding: 0 $spacer;
+}
+
+.section-title {
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    margin-bottom: ($spacer * 2);
+    text-align: center;
+    position: relative;
+
+    &:after {
+        content: '';
+        position: absolute;
+        bottom: -5px;
+        left: 50%;
+        margin-left: -25px;
+        width: 50px;
+        height: 1px;
+        background: #222;
+    }
+}

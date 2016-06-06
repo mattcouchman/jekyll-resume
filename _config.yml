@@ -2,12 +2,18 @@
 
 # Site settings
 title: Jekyll Resume
-email: hello@mattcouchman.co.uk
+email: email@domain.com
 description: Jekyll Resume is a mega simple resume theme for Jekyll.
 baseurl: ""
 url: "http://mattcouchman.co.uk/jekyll-resume"
+name: Matt Couchman
+job: front end engineer
+location: Birmingham, UK
+languages: HTML, CSS and Javascript
 twitter_username: mattcouchman
 github_username:  mattcouchman
+codepen_username:  mattcouchman
+email_address: some@email.com
 
 # Build settings
 markdown: kramdown

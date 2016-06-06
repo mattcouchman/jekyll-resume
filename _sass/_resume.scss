@@ -1,3 +1,6 @@
+// @name Resume
+// @description All resume styles
+
 dl {
     margin-bottom: $spacer;
 }
@@ -34,10 +37,6 @@ dt, dd {
     margin: 0;
     font-weight: bold;
     font-size: 1.2rem;
-}
-
-.more-jobs {
-    display: none;
 }
 
 a {

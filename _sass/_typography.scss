@@ -1,0 +1,14 @@
+// @name Typography
+// @description All typography settings and styles
+
+@import url(https://fonts.googleapis.com/css?family=Lora:400,700|Playfair+Display:400,700,900);
+
+// Our variables
+$base-font-family: "Lora", Helvetica, Arial, sans-serif;
+$base-font-size:   16px;
+
+body {
+    font-family: $base-font-family, serif;
+    font-size: $base-font-size;
+    line-height: 1.4;
+}

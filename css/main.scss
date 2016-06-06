@@ -1,49 +1,13 @@
 ---
-# Only the main Sass file needs front matter (the dashes are enough)
+# Main Sass file
 ---
 
-@import url(https://fonts.googleapis.com/css?family=Lora:400,700|Playfair+Display:400,700,900);
-
-
-
-// Our variables
-$base-font-family: "Lora", Helvetica, Arial, sans-serif;
-$base-font-size:   16px;
-$spacer: 20px;
-
-// Import partials from `sass_dir` (defaults to `_sass`)
+// Import all partials from _sass
 @import
-    "reset",
-    "header",
-    "resume"
+    'reset',
+    'layout',
+    'typography',
+    'header',
+    'footer',
+    'resume'
 ;
-
-body {
-    font-family: Lora, serif;
-    line-height: 1.4;
-}
-
-.container {
-    max-width: 860px;
-    margin: 0 auto;
-    padding: 0 $spacer;
-}
-
-.section-title {
-    text-transform: uppercase;
-    letter-spacing: 4px;
-    margin-bottom: ($spacer * 2);
-    text-align: center;
-    position: relative;
-
-    &:after {
-        content: '';
-        position: absolute;
-        bottom: -5px;
-        left: 50%;
-        margin-left: -25px;
-        width: 50px;
-        height: 1px;
-        background: #222;
-    }
-}

@@ -1,4 +1,5 @@
-@import url(https://fonts.googleapis.com/css?family=Roboto+Mono:400,500,700);
+// @name Header
+// @description All header styles
 
 header {
     border-bottom: 1px solid #edefee;
@@ -12,6 +13,8 @@ header {
 }
 
 .intro {
+    margin-bottom: ($spacer * 2);
+
     &__pre, &__post {
         text-transform: uppercase;
         letter-spacing: 4px;
@@ -27,5 +30,11 @@ header {
             font-size: 2.2rem;
             max-width: 60%;
         }
+    }
+}
+
+.social {
+    a {
+        margin-right: $spacer;
     }
 }
